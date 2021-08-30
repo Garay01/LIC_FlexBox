@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox easy</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="title">
+        <h2>Flexbox</h2>
+        <div class="toggle">
+          <strong>Estilo Columna</strong>
+          <label class="container">
+              <input type="checkbox" name="" id="toggle" />
+              <span></span>
+              <i class="indicator"></i>
+            </label>
+        </div>
+      </div>
+      <div class="wrap row">
+        <div class="content">
+          <span class="title">Flex Start</span>
+          <div class="item">
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+          </div>
+          <span class="title">Center</span>
+          <div class="item">
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+          </div>
+          <span class="title">Flex end</span>
+          <div class="item">
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+          </div>
+          <span class="title">Space Around</span>
+          <div class="item">
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+          </div>
+          <span class="title">Space Between</span>
+          <div class="item">
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+          </div>
+          <span class="title">Space Evently</span>
+          <div class="item">
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+          </div>
+          <span class="title">Stretch</span>
+          <div class="item">
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap column">
+        <div class="content">
+          <span class="title">Flex Start</span>
+          <div class="item">
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+          </div>
+          <span class="title">Center</span>
+          <div class="item">
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+          </div>
+          <span class="title">Flex end</span>
+          <div class="item">
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+          </div>
+          <span class="title">Space Around</span>
+          <div class="item">
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+          </div>
+          <span class="title">Space Between</span>
+          <div class="item">
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+          </div>
+          <span class="title">Space Evently</span>
+          <div class="item">
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+          </div>
+          <span class="title">Stretch</span>
+          <div class="item">
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<script>
+  const wraps = document.getElementsByClassName("wrap");
+  document.getElementById("toggle").addEventListener("change", (e) => {
+    if (e.target.checked) {
+      wraps[0].style.display = "none";
+      wraps[1].style.display = "flex";
+    } else {
+      wraps[0].style.display = "flex";
+      wraps[1].style.display = "none";
+    }
+  });
+</script>
+
+</html>
