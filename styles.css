@@ -145,7 +145,7 @@ main section {
   justify-content: flex-end;
 }
 
-.colum .item:nth-of-type(3) {
+.column .item:nth-of-type(3) {
   align-content: flex-end;
 }
 
